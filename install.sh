@@ -20,15 +20,17 @@ sudo pacman -S --noconfirm system-config-printer hplip
 
 # nvidia
 
-sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
+sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings \
+vulkan-icd-loader lib32-vulkan-icd-loader
 
 # programs
 
-sudo pacman -S --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip gnome-disk-utility \
-libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator xreader drawing rhythmbox
+sudo pacman -S --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip \
+gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
+xreader drawing rhythmbox gnome-screenshot
 
 yay -S --noconfirm all-repository-fonts nordic-wallpapers-git mint-themes mint-y-icons xcursor-dmz \
-xviewer onlyoffice pfetch
+xviewer onlyoffice pfetch vscodium-bin
 
 # lightdm
 
