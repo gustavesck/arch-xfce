@@ -28,7 +28,7 @@ sudo pacman -S --noconfirm firefox vlc keepassxc chromium file-roller qbittorren
 libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator xreader drawing rhythmbox
 
 yay -S --noconfirm all-repository-fonts nordic-wallpapers-git mint-themes mint-y-icons xcursor-dmz \
-xviewer onlyoffice
+xviewer onlyoffice pfetch
 
 # lightdm
 
@@ -45,7 +45,9 @@ mkdir Music
 mkdir Pictures
 mkdir Videos
 
-cd arch-xfce/.config
+cd arch-xfce
+cp .bashrc ~
+cd .config
 cp -r * ~/.config
 
 # Installation done
