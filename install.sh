@@ -11,6 +11,13 @@ cd yay
 makepkg -si --noconfirm
 cd ~
 
+# printer
+
+sudo pacman -S --noconfirm cups
+sudo systemctl enable --now cups
+sudo usermod -aG lp $USER
+sudo pacman -S --noconfirm system-config-printer hplip
+
 # programs
 
 sudo pacman -S --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip gnome-disk-utility \
