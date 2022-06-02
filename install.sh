@@ -35,7 +35,7 @@ mkdir Videos
 
 cd arch-xfce/.config
 cp -r * ~/.config
-rm ~/yay
+rm -r ~/yay
 
 # Installation done
 
