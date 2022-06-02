@@ -33,7 +33,8 @@ xviewer onlyoffice
 # lightdm
 
 sudo pacman -S --noconfirm lightdm-slick-greeter 
-yay -S --noconfirm lightdm-settings
+cd ~/arch-xfce/lightdm
+sudo cp * /etc/lightdm 
 
 # Config
 
