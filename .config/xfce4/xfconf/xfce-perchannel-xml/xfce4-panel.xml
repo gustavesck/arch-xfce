@@ -36,6 +36,7 @@
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="applicationsmenu">
       <property name="button-icon" type="string" value="archlinux-logo"/>
+      <property name="button-title" type="string" value="Applications "/>
     </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
@@ -52,6 +53,8 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="thunar"/>
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
       </property>
     </property>
