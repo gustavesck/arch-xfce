@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "Would you like to install NVIDIA drivers? (y/n)"
+read nvidia
+
+echo "Would you like to install gaming utilities? (y/n)"
+read games
+
 cd ~
 sudo pacman -Syy
 
@@ -20,17 +26,29 @@ sudo pacman -S --noconfirm system-config-printer hplip
 
 # nvidia
 
-sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings \
-vulkan-icd-loader lib32-vulkan-icd-loader
+if [[ "$nvidia" == "y" ]]; then
+	sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
+fi
+
+# gaming
+
+if [[ "$games" == "y" ]]; then
+	sudo pacman -S --needed --noconfirm wine lutris steam
+fi
 
 # programs
 
-sudo pacman -S --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip \
+sudo pacman -S --needed --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip \
 gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
-xreader drawing rhythmbox gnome-screenshot
+xreader drawing rhythmbox gnome-screenshot celluloid
 
-yay -S --noconfirm all-repository-fonts nordic-wallpapers-git mint-themes mint-y-icons xcursor-dmz \
-xviewer onlyoffice pfetch vscodium-bin
+yay -S --noconfirm xviewer onlyoffice pfetch vscodium-bin
+
+# themes
+
+sudo pacman -S --noconfirm adapta-gtk-theme papirus-icon-theme pop-icon-theme
+
+yay -S --noconfirm all-repository-fonts nordic-wallpapers-git
 
 # lightdm
 
@@ -40,18 +58,11 @@ sudo cp * /etc/lightdm
 
 # Config
 
-cd ~
-mkdir Documents
-mkdir Downloads
-mkdir Music
-mkdir Pictures
-mkdir Videos
-
-cd arch-xfce
+cd ~/arch-xfce
 cp .bashrc ~
-cd .config
+cd ~/arch-xfce/.config
 cp -r * ~/.config
 
 # Installation done
 
-echo "All done! Please reboot the computer."
+echo -e "\033[0;32m" "All done! Please reboot the computer."
