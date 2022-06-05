@@ -65,4 +65,4 @@ cp -r * ~/.config
 
 # Installation done
 
-echo -e "\033[0;32m" "All done! Please reboot the computer."
+echo -e "\033[0;32m" "All done! Please reboot the computer." '\033[0m'
