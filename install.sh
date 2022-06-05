@@ -37,9 +37,9 @@ yay -S --noconfirm xviewer onlyoffice pfetch vscodium-bin
 
 # themes
 
-sudo pacman -S --noconfirm adapta-gtk-theme papirus-icon-theme pop-icon-theme
+sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
 
-yay -S --noconfirm all-repository-fonts nordic-wallpapers-git
+yay -S --noconfirm all-repository-fonts nordic-wallpapers-git juno-theme-git
 
 # lightdm
 
