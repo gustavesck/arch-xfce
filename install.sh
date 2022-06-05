@@ -3,9 +3,6 @@
 echo "Would you like to install NVIDIA drivers? (y/n)"
 read nvidia
 
-echo "Would you like to install gaming utilities? (y/n)"
-read games
-
 cd ~
 sudo pacman -Syy
 
@@ -28,12 +25,6 @@ sudo pacman -S --noconfirm system-config-printer hplip
 
 if [[ "$nvidia" == "y" ]]; then
 	sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
-fi
-
-# gaming
-
-if [[ "$games" == "y" ]]; then
-	sudo pacman -S --needed --noconfirm wine lutris steam
 fi
 
 # programs
@@ -65,4 +56,4 @@ cp -r * ~/.config
 
 # Installation done
 
-echo -e "\033[0;32m" "All done! Please reboot the computer." '\033[0m'
+echo "-------------- [ All done! Please reboot the computer. ] --------------"
