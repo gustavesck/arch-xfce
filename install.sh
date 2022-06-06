@@ -7,8 +7,7 @@
 #
 # Arch xfce configuration script
 
-echo "Would you like to install NVIDIA drivers? (y/n)"
-read nvidia
+read -p "Would you like to install NVIDIA drivers? (y/n)" nvidia
 
 cd ~
 sudo pacman -Syy
@@ -30,7 +29,7 @@ sudo pacman -S --noconfirm system-config-printer hplip
 
 # nvidia
 
-if [[ "$nvidia" == "y" ]]; then
+if [ "$nvidia" -eq "y" ]; then
 	sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 fi
 
