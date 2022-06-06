@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#   ____   ____  
+#  / ___| | __ )
+# | |  _  |  _ \   Gustavo Borges (Gustavesck)
+# | |_| | | |_) |  https://www.github.com/gustavesck
+#  \____| |____/ 
+#
+# Arch xfce configuration script
 
 echo "Would you like to install NVIDIA drivers? (y/n)"
 read nvidia
@@ -56,4 +63,4 @@ cp -r * ~/.config
 
 # Installation done
 
-echo "-------------- [ All done! Please reboot the computer. ] --------------"
+echo -e "\033[0;32mAll done! Please reboot the computer.\033[0m"
