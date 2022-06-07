@@ -7,7 +7,7 @@
 #
 # Arch xfce configuration script
 
-read -p "Would you like to install NVIDIA drivers? (y/n)" nvidia
+read -p "Would you like to install NVIDIA drivers? (y/n) " nvidia
 
 cd ~
 sudo pacman -Syy
@@ -37,7 +37,7 @@ fi
 
 sudo pacman -S --needed --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip \
 gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
-xreader drawing rhythmbox gnome-screenshot celluloid
+xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp
 
 yay -S --noconfirm xviewer onlyoffice pfetch vscodium-bin
 
