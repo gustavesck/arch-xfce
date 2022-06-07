@@ -57,8 +57,7 @@ sudo cp * /etc/lightdm
 
 cd ~/arch-xfce
 cp .bashrc ~
-cd ~/arch-xfce/.config
-cp -r * ~/.config
+cp -r .config ~
 
 # Installation done
 

@@ -1,0 +1,5 @@
+[Added Associations]
+application/x-shellscript=xed.desktop;
+
+[Default Applications]
+text/plain=org.xfce.mousepad.desktop
