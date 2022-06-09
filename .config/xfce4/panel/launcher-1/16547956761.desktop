@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Findex
+Comment=
+Exec=findex
+Icon=manjaro-settings-manager-panel
+Path=
+Terminal=false
+StartupNotify=false
