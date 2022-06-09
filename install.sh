@@ -10,7 +10,7 @@
 read -p "Would you like to install NVIDIA drivers? (y/n) " nvidia
 
 cd ~
-sudo pacman -Syyu
+sudo pacman -Syyu --noconfirm
 
 # yay
 
