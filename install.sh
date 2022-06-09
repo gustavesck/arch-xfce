@@ -45,7 +45,7 @@ yay -S --noconfirm xviewer onlyoffice pfetch vscodium-bin findex-git
 
 sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
 
-yay -S --noconfirm all-repository-fonts nordic-wallpapers-git juno-theme-git
+yay -S --noconfirm all-repository-fonts nordic-wallpapers-git
 
 # lightdm
 
@@ -59,6 +59,8 @@ cd ~/arch-xfce
 cp .bashrc ~
 cp -r .config ~
 sudo cp -r wallpaper /usr/share/backgrounds
+cd ~/arch-xfce/themes
+sudo cp -r * /usr/share/themes
 
 # Installation done
 
