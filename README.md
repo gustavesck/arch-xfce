@@ -2,4 +2,4 @@
 
 ## Final result
 
-<img src="https://i.imgur.com/eI33uzo.png">
+<img src="https://i.imgur.com/9K3aPsH.png">
