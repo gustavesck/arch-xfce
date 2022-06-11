@@ -1,5 +1,21 @@
 [Added Associations]
-application/x-shellscript=xed.desktop;
+application/x-shellscript=xed.desktop;org.xfce.mousepad.desktop;
+image/jpeg=org.xfce.ristretto.desktop;
+video/x-mjpeg=org.xfce.Parole.desktop;
+image/png=org.xfce.ristretto.desktop;
+text/x-txt2tags=org.xfce.mousepad.desktop;
+text/x-csharp=xed.desktop;
+video/mp4=org.xfce.Parole.desktop;
+audio/mp4=org.xfce.Parole.desktop;
+video/x-ms-wmv=mpv.desktop;org.xfce.Parole.desktop;
+text/plain=xed.desktop;
 
 [Default Applications]
-text/plain=org.xfce.mousepad.desktop
+image/jpeg=org.xfce.ristretto.desktop
+video/x-mjpeg=org.xfce.Parole.desktop
+image/png=org.xfce.ristretto.desktop
+text/x-txt2tags=org.xfce.mousepad.desktop
+text/x-csharp=xed.desktop
+video/mp4=org.xfce.Parole.desktop
+audio/mp4=org.xfce.Parole.desktop
+video/x-ms-wmv=org.xfce.Parole.desktop

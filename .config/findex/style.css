@@ -1,17 +1,7 @@
 .findex-query {
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px;
-}
-
-.findex-results
-{
-    padding: 5px;
-}
-
-.findex-result-row
-{
-    border-radius: 2px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
 }
 
 .findex-result-icon {

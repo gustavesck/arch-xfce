@@ -12,7 +12,7 @@ read -p "Would you like to install NVIDIA drivers? (y/n) " nvidia
 cd ~
 sudo pacman -Syyu --noconfirm
 
-# yay
+# Yay
 
 sudo pacman -S --needed --noconfirm git base-devel
 git clone https://aur.archlinux.org/yay.git
@@ -20,34 +20,39 @@ cd yay
 makepkg -si --noconfirm
 cd ~
 
-# printer
+# Printer
 
 sudo pacman -S --noconfirm cups
 sudo systemctl enable --now cups
 sudo usermod -aG lp $USER
 sudo pacman -S --noconfirm system-config-printer hplip
 
-# nvidia
+# Nvidia
 
 if [ "$nvidia" -eq "y" ]; then
 	sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 fi
 
-# programs
+# Programs
 
 sudo pacman -S --needed --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip \
 gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
-xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp picom plank
+xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp
 
 yay -S --noconfirm xviewer onlyoffice pfetch vscodium-bin findex-git
 
-# themes
+# Themes
 
 sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
 
-yay -S --noconfirm all-repository-fonts nordic-wallpapers-git
+yay -S --noconfirm all-repository-fonts nordic-wallpapers-git qogir-gtk-theme-git
 
-# lightdm
+# Multimedia codecs
+
+sudo pacman -S --needed --noconfirm jasper lame libdca libdv gst-libav libtheora libvorbis libxv wavpack x264 xvidcore dvd+rw-tools \
+dvdauthor dvgrab libmad libmpeg2 libdvdcss libdvdread libdvdnav exfat-utils fuse-exfat a52dec faac faad2 flac
+
+# Lightdm
 
 sudo pacman -S --noconfirm lightdm-slick-greeter 
 cd ~/arch-xfce/lightdm
@@ -58,9 +63,6 @@ sudo cp * /etc/lightdm
 cd ~/arch-xfce
 cp .bashrc ~
 cp -r .config ~
-sudo cp -r wallpaper /usr/share/backgrounds
-cd ~/arch-xfce/themes
-sudo cp -r * /usr/share/themes
 
 # Installation done
 
