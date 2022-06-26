@@ -39,7 +39,7 @@ sudo pacman -S --needed --noconfirm firefox vlc keepassxc chromium file-roller q
 gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
 xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp
 
-yay -S --noconfirm xviewer onlyoffice pfetch vscodium-bin findex-git
+yay -S --noconfirm onlyoffice pfetch vscodium-bin findex-git
 
 # Themes
 
