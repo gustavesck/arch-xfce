@@ -35,11 +35,11 @@ fi
 
 # Programs
 
-sudo pacman -S --needed --noconfirm firefox vlc keepassxc chromium file-roller qbittorrent p7zip \
+sudo pacman -S --needed --noconfirm vlc keepassxc chromium file-roller qbittorrent p7zip \
 gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
 xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp
 
-yay -S --noconfirm onlyoffice pfetch vscodium-bin findex-git
+yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin
 
 # Themes
 
