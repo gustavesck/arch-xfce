@@ -7,7 +7,7 @@
 #
 # Arch xfce configuration script
 
-read -p "Would you like to install NVIDIA drivers? (y/n) " nvidia
+read -p "Would you like to install NVIDIA drivers? (y/N) " nvidia
 
 cd ~
 sudo pacman -Syyu --noconfirm

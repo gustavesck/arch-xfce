@@ -12,12 +12,12 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="36"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="1"/>
+        <value type="int" value="14"/>
         <value type="int" value="5"/>
         <value type="int" value="4"/>
         <value type="int" value="22"/>
         <value type="int" value="7"/>
-        <value type="int" value="14"/>
+        <value type="int" value="1"/>
         <value type="int" value="15"/>
         <value type="int" value="17"/>
         <value type="int" value="16"/>
@@ -72,19 +72,9 @@
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-1" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16549016021.desktop"/>
-      </property>
-    </property>
     <property name="plugin-7" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="16549017682.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-14" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16549017763.desktop"/>
       </property>
     </property>
     <property name="plugin-15" type="string" value="launcher">
@@ -117,5 +107,11 @@
     <property name="plugin-24" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16576762321.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-14" type="string" value="whiskermenu"/>
   </property>
 </channel>
