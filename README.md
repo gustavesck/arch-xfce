@@ -1,3 +1,3 @@
 # My personal Arch xfce post-installation script
 
-<img src="https://i.imgur.com/9K3aPsH.png">
+<img src="https://i.imgur.com/TxO2mr8.png">
