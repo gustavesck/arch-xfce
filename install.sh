@@ -33,10 +33,14 @@ if [ "$nvidia" -eq "y" ]; then
 	sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 fi
 
+# Gaming
+
+sudo pacman -S lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
+
 # Programs
 
 sudo pacman -S --needed --noconfirm vlc keepassxc chromium file-roller qbittorrent p7zip \
-gnome-disk-utility libreoffice jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
+gnome-disk-utility jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
 xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp
 
 yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin
