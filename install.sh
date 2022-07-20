@@ -39,11 +39,15 @@ sudo pacman -S lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
 
 # Programs
 
-sudo pacman -S --needed --noconfirm vlc keepassxc chromium file-roller qbittorrent p7zip \
-gnome-disk-utility jdk-openjdk gvfs simple-scan xfce4-goodies gnome-calculator \
-xreader drawing rhythmbox gnome-screenshot celluloid xed mtpfs gvfs-mtp
+sudo pacman -S --needed --noconfirm vlc keepassxc file-roller qbittorrent p7zip \
+gnome-disk-utility jdk-openjdk simple-scan xfce4-goodies gnome-calculator \
+xreader drawing gnome-screenshot celluloid xed 
 
-yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin
+yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-debloater-bin
+
+# Some tools
+
+sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools
 
 # Themes
 
