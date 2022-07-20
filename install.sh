@@ -47,7 +47,7 @@ yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-de
 
 # Some tools
 
-sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools
+sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools nodejs npm
 
 # Themes
 
