@@ -41,7 +41,7 @@ sudo pacman -S lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
 
 sudo pacman -S --needed --noconfirm vlc keepassxc file-roller qbittorrent p7zip \
 gnome-disk-utility jdk-openjdk simple-scan xfce4-goodies gnome-calculator \
-xreader drawing gnome-screenshot celluloid xed 
+xreader drawing gnome-screenshot celluloid xed chromium
 
 yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-debloater-bin
 
