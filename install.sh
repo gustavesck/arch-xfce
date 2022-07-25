@@ -49,7 +49,7 @@ yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-de
 
 sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools nodejs npm
 
-yay -S mugshot --needed --noconfirm
+yay -S --needed --noconfirm mugshot
 
 # Themes
 
