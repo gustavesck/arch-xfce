@@ -41,7 +41,7 @@ sudo pacman -S lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
 
 sudo pacman -S --needed --noconfirm vlc keepassxc file-roller qbittorrent p7zip \
 gnome-disk-utility jdk-openjdk simple-scan xfce4-goodies gnome-calculator \
-xreader drawing gnome-screenshot celluloid xed chromium
+xreader drawing gnome-screenshot celluloid xed
 
 yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-debloater-bin
 
@@ -49,11 +49,13 @@ yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-de
 
 sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools nodejs npm
 
+yay -S mugshot --needed --noconfirm
+
 # Themes
 
 sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
 
-yay -S --noconfirm all-repository-fonts nordic-wallpapers-git qogir-gtk-theme-git
+yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git
 
 # Multimedia codecs
 
@@ -71,6 +73,7 @@ sudo cp * /etc/lightdm
 cd ~/arch-xfce
 cp .bashrc ~
 cp -r .config ~
+sudo cp -r wallpapers /usr/share/backgrounds
 
 # Installation done
 
