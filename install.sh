@@ -43,7 +43,7 @@ sudo pacman -S --needed --noconfirm vlc keepassxc file-roller qbittorrent p7zip 
 gnome-disk-utility jdk-openjdk simple-scan xfce4-goodies gnome-calculator \
 xreader drawing gnome-screenshot celluloid xed
 
-yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin universal-android-debloater-bin
+yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin
 
 # Some tools
 
