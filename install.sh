@@ -35,7 +35,7 @@ fi
 
 # Gaming
 
-sudo pacman -S lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
+sudo pacman -S --needed --noconfirm lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
 
 # Programs
 
