@@ -55,7 +55,7 @@ yay -S --needed --noconfirm mugshot
 
 sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
 
-yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git
+yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git nordic-wallpapers-git
 
 # Multimedia codecs
 
@@ -73,7 +73,6 @@ sudo cp * /etc/lightdm
 cd ~/arch-xfce
 cp .bashrc ~
 cp -r .config ~
-sudo cp -r wallpapers /usr/share/backgrounds
 
 # Installation done
 
