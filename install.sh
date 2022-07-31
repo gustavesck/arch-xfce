@@ -49,8 +49,6 @@ yay -S --noconfirm onlyoffice pfetch vscodium-bin brave-bin
 
 sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools nodejs npm
 
-yay -S --needed --noconfirm mugshot
-
 # Themes
 
 sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
