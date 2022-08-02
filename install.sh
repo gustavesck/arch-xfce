@@ -51,9 +51,9 @@ sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools nodejs npm
 
 # Themes
 
-sudo pacman -S --noconfirm papirus-icon-theme pop-icon-theme
+sudo pacman -S --noconfirm papirus-icon-theme
 
-yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git nordic-wallpapers-git
+yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git nordic-wallpapers-git qogir-icon-theme
 
 # Multimedia codecs
 
