@@ -33,27 +33,24 @@ if [ "$nvidia" -eq "y" ]; then
 	sudo pacman -S --needed --noconfirm nvidia nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 fi
 
-# Gaming
-
-sudo pacman -S --needed --noconfirm lutris wine lib32-alsa-plugins lib32-libpulse lib32-openal
-
 # Programs
 
-sudo pacman -S --needed --noconfirm vlc keepassxc file-roller qbittorrent p7zip \
-gnome-disk-utility jdk-openjdk simple-scan xfce4-goodies gnome-calculator \
-xreader drawing gnome-screenshot celluloid xed libreoffice
+sudo pacman -S --needed --noconfirm firefox file-roller p7zip gnome-disk-utility simple-scan xfce4-goodies gnome-calculator \
+xreader drawing libreoffice rhythmbox
 
-yay -S --noconfirm pfetch vscodium-bin brave-bin
+yay -S --noconfirm pfetch pamac-aur
+
+sudo pacman -Rns --noconfirm xarchiver
 
 # Some tools
 
-sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools nodejs npm
+sudo pacman -S --needed --noconfirm gvfs mtpfs gvfs-mtp android-tools
 
 # Themes
 
 sudo pacman -S --noconfirm papirus-icon-theme
 
-yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git nordic-wallpapers-git qogir-icon-theme
+yay -S --noconfirm all-repository-fonts qogir-gtk-theme-git nordic-wallpapers-git xcursor-dmz
 
 # Multimedia codecs
 
@@ -71,6 +68,10 @@ sudo cp * /etc/lightdm
 cd ~/arch-xfce
 cp .bashrc ~
 cp -r .config ~
+sudo cp -r default /usr/share/icons
+
+cd ~
+mkdir Documents Downloads Music Pictures Videos
 
 # Installation done
 
