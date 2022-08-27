@@ -36,7 +36,7 @@ fi
 # Programs
 
 sudo pacman -S --needed --noconfirm firefox file-roller p7zip gnome-disk-utility simple-scan xfce4-goodies gnome-calculator \
-xreader drawing libreoffice rhythmbox
+xreader drawing libreoffice rhythmbox transmission-gtk
 
 yay -S --noconfirm pfetch pamac-aur
 
